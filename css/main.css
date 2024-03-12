@@ -1,0 +1,39 @@
+.menu-links a {
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .menu-links {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .menu-links {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 601px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+</style>
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
