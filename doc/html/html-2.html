@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 教程</title>
+    <style>
+      code {
+        border-radius: 10px;
+        background-color: #e9e9e6 !important;
+      }
+    </style>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/default.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/languages/go.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../../js/resolution.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <a href="http://www.saycode.cn"><i class="fas fa-home"></i></a>
+      <h1>第2天：文本标签和 div</h1>
+      <p>咱们今天来学习下网页开发中常用的文本标签，比如标题标签、段落标签，还有加粗、斜体这些。同时咱们也要了解一下<span class="keynote-label">&lt;div&gt;</span>标签，知道它是干啥的，怎么用它来布局页面。</p>
+      <p>标题标签和段落标签昨天已经说过了，今天就不说了</p>
+      <h2>粗体和斜体</h2>
+      <p>要让文字显示为粗体，可以使用<span class="keynote-label">&lt;strong&gt;</span>标签或<span class="keynote-label">&lt;b&gt;</span>标签；要显示为斜体，可以使用<span class="keynote-label">&lt;em&gt;</span>标签或<span class="keynote-label">&lt;i&gt;</span>标签。</p>
+      <pre>
+            <code class="language-html">
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;文本标签&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;p&gt;这是&lt;strong&gt;粗体&lt;/strong&gt;文字，这是&lt;em&gt;斜体</em>&lt;/em&gt;文字。&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+        <h2>div标签</h2>
+      <p>
+        <span class="keynote-label">&lt;div&gt;</span>标签是一个通用的块级容器，用来将内容分组，并且可以用来进行页面布局。它本身不会添加任何样式，但可以通过CSS来设置样式，实现页面布局。
+      </p>
+      <pre>
+        <code class="language-html">
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;div&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;div&gt;
+                &lt;p&gt;这是放在div里面的一段文字。 &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+      </pre>
+      <h2>使用<span class="keynote-label">&lt;div&gt;</span
+        >进行页面布局</h2>
+      <p>
+        通过合理使用<span class="keynote-label">&lt;div&gt;</span
+          >标签，我们可以创建出更有条理的页面结构。比如，将网页分成头部、导航、主体和底部等不同区域，然后用<div>来包裹这些区域，方便设置样式和布局。
+      </p>
+      <pre>
+        <code class="language-html">
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;段落&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;div class="header"&gt;
+                    &lt;h1&gt;这是头部&lt;/h1&gt;
+                &lt;/div&gt;
+            
+            &lt;div class="nav"&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;导航1&lt;/li&gt;
+                    &lt;li&gt;导航2&lt;/li&gt;
+                    &lt;li&gt;导航3&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="main"&gt;
+                &lt;p&gt;这是主体内容。&lt;/p&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="footer"&gt;
+                &lt;p&gt;这是底部信息。&lt;/p&gt;
+            &lt;/div&gt;
+            
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+      </pre>
+      <p>学习了文本标签和&lt;div&gt;标签后，你已经迈出了网页开发的第一步！坚持学习，不断探索✨💻🚀</p>
+    </div>
+    <div class="container text-right">
+      <a href="html-3.html" class="a-next">下一个 超链接和图像链接</a>
+    </div>
+  </body>
+</html>

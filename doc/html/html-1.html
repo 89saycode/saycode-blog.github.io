@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 教程</title>
+    <style>
+      code {
+        border-radius: 10px;
+        background-color: #e9e9e6 !important;
+      }
+    </style>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/default.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/languages/go.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../../js/resolution.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <a href="http://www.saycode.cn"><i class="fas fa-home"></i></a>
+      <h1>第一天：HTML入门</h1>
+      <p>嘎哈，兄弟们！今天我给大家讲讲HTML的基础知识，听好了！</p>
+      <p>
+        首先，咱们得知道HTML是什么玩意儿。它是<span class="keynote-label"
+          >HyperText Markup Language</span
+        >
+        的缩写，翻译过来就是超文本标记语言。别被这些名词吓到，其实它就是用来创建网页的一种语言。有了HTML，我们才能在网上看到各种各样的网页。
+      </p>
+      <h2>学习HTML的基本结构</h2>
+      <p>
+        HTML文档由一系列的元素组成，每个元素可以包含内容，并且可以具有属性。HTML元素通常由开始标签、结束标签和内容构成。
+      </p>
+      <p>接着，咱们来学学HTML的基本结构，就像盖房子一样，得有个框架。</p>
+      <h2>创建一个简单的HTML文档</h2>
+      <pre>
+            <code class="language-html">
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;我的第一个网页&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;欢迎来到我的网页&lt;/h1&gt;
+                    &lt;p&gt;这是一个段落，用于展示网页内容。&lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+      <p>
+        哥们儿，别慌，我来解释一下。<span class="keynote-label"
+          >&lt;!DOCTYPE html&gt;</span
+        >
+        这一行是告诉浏览器这是一个HTML文档。然后，在
+        <span class="keynote-label">&lt;html&gt;</span>
+        标签中，我们把整个文档的内容包起来。
+      </p>
+      <p>
+        在 <span class="keynote-label">&lt;head&gt;</span>
+        标签中，我们可以放一些网页的头信息，比如标题。这个标题会显示在浏览器的标签页上。
+      </p>
+      <p>
+        接下来，在<span class="keynote-label">&lt;body&gt;</span>
+        标签中，我们放网页的具体内容。<span class="keynote-label"
+          >&lt;h1&gt;</span
+        >
+        是一个标题标签，用来显示主要标题。<span class="keynote-label"
+          >&lt;p&gt;</span
+        >
+        是段落标签，可以写一些文字内容。
+      </p>
+      <h2>标题</h2>
+      <p>
+        在HTML中，标题标签用来显示页面中重要的标题内容。最常用的是
+        <span class="keynote-label">&lt;h1&gt;</span> 到
+        <span class="keynote-label">&lt;h6&gt;</span>
+        这几个标签，数字越小，标题就越大。
+      </p>
+      <p>下面是一个例子，展示了如何使用标题标签：</p>
+      <pre>
+        <code class="language-html">
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;标题&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;这是一个大标题&lt;/h1&gt;
+                &lt;h2&gt;这是一个稍小一点的标题&lt;/h2&gt;
+                &lt;h3&gt;这是一个更小一点的标题&lt;/h3&gt;
+                &lt;h4&gt;这是一个更更小一点的标题&lt;/h4&gt;
+                &lt;h5&gt;这是一个更更更小一点的标题&lt;/h5&gt;
+                &lt;h6&gt;这是一个更更更更小一点的标题&lt;/h6&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+      </pre>
+      <p>
+        在浏览器中显示出来的效果就是不同大小的标题文字。标题对于网页的结构和内容组织非常重要，可以让用户更快速地了解页面的主要内容。
+      </p>
+      <h2>段落</h2>
+      <p>
+        段落标签<span class="keynote-label">&lt;p&gt;</span
+        >用来定义文本的段落。我们可以在段落标签中放置文字内容，让页面更加清晰和有组织。
+      </p>
+      <pre>
+        <code class="language-html">
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;段落&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;p&gt;这是一个段落，里面可以写一些文字内容。&lt;/p&gt;
+                &lt;p&gt;这是也一个段落，里面可以写一些文字内容。&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+      </pre>
+      <p>段落标签能够帮助我们将文字分段显示。</p>
+      <p>非常好！你已经成为了入门级别的前端小子。</p>
+    </div>
+    <div class="container text-right">
+      <a href="html-2.html" class="a-next">下一个 文本标签和div</a>
+    </div>
+  </body>
+</html>
